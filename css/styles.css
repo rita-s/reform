@@ -2294,8 +2294,7 @@ h2 i {
 
 @media (max-width: 768px) {
     .navbar {
-        flex-wrap: wrap;
-        justify-content: space-between;
+        position: relative;
     }
 
     .mobile-menu-toggle {
@@ -2303,24 +2302,20 @@ h2 i {
         background: none;
         border: none;
         cursor: pointer;
-    }
-
-    .mobile-menu-toggle span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: var(--uk-blue);
-        margin: 5px 0;
-        transition: all 0.3s ease;
+        font-size: 1.5rem;
+        color: var(--uk-blue);
     }
 
     .nav-links {
         display: none;
-        width: 100%;
-        order: 3;
-        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
         background-color: var(--uk-white);
-        padding: 1rem 0;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     .nav-links.active {
@@ -2333,6 +2328,36 @@ h2 i {
 
     .nav-links a {
         display: block;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--uk-white);
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.5rem 0;
+        color: var(--uk-blue); /* Ensure text color is visible */
+        font-size: 1rem; /* Set an explicit font size */
+        text-decoration: none;
     }
 }
