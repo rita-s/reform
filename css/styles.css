@@ -2291,3 +2291,48 @@ h2 i {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: var(--uk-blue);
+        margin: 5px 0;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        order: 3;
+        flex-direction: column;
+        background-color: var(--uk-white);
+        padding: 1rem 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+}

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (mobileMenuToggle && navLinks) {
         mobileMenuToggle.addEventListener('click', function() {
             navLinks.classList.toggle('active');
-            mobileMenuToggle.classList.toggle('active');
+            this.classList.toggle('active');
         });
     }
 });
