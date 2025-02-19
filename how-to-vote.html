@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to vote for Rita Anstey-Lewis in Cambridgeshire. Information about postal voting and downloading necessary forms.">
+    <title>How to Vote | Rita Anstey-Lewis for Cambridgeshire</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div id="navbar-placeholder"></div>
+</header>
+
+<main>
+    <section class="page-header">
+        <div class="container">
+            <h1>How to Vote</h1>
+            <p>Every vote counts - make sure yours is heard</p>
+        </div>
+    </section>
+
+    <section class="voting-info">
+        <div class="container">
+            <div class="voting-grid">
+                <div class="postal-vote-section">
+                    <h2><i class="fas fa-envelope"></i> Postal Vote</h2>
+                    <p>Can't make it to the polling station? You can vote by post!</p>
+
+                    <h3>How to Apply:</h3>
+                    <ol class="steps">
+                        <li>Download and fill out the postal vote application form</li>
+                        <li>Send it to your local Electoral Registration Office</li>
+                        <li>Receive your postal ballot paper</li>
+                        <li>Vote and return before the deadline</li>
+                    </ol>
+
+                    <div class="download-section">
+                        <h3>Download Form</h3>
+                        <a href="#" class="download-button">
+                            <i class="fas fa-download"></i> Download Postal Vote Form
+                        </a>
+                        <a href="#" class="view-button">
+                            <i class="fas fa-eye"></i> View Form
+                        </a>
+                    </div>
+                </div>
+
+                <div class="key-dates-section">
+                    <h2><i class="fas fa-calendar"></i> Key Dates</h2>
+                    <div class="date-items">
+                        <div class="date-item">
+                            <h3>Postal Vote Application Deadline</h3>
+                            <p>5pm on [Date]</p>
+                        </div>
+                        <div class="date-item">
+                            <h3>Postal Vote Return Deadline</h3>
+                            <p>10pm on [Date]</p>
+                        </div>
+                        <div class="date-item">
+                            <h3>Election Day</h3>
+                            <p>[Date]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="help-section">
+                <h2>Need Help?</h2>
+                <p>If you need assistance with your postal vote application or have any questions, we're here to help:</p>
+                <div class="contact-options">
+                    <a href="tel:YOUR_PHONE" class="contact-option">
+                        <i class="fas fa-phone"></i>
+                        <span>Call Us</span>
+                    </a>
+                    <a href="mailto:YOUR_EMAIL" class="contact-option">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email Us</span>
+                    </a>
+                    <a href="contact.html" class="contact-option">
+                        <i class="fas fa-message"></i>
+                        <span>Contact Form</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>Published and promoted by Reform UK, 83 Victoria Street, London SW1H 0HW</p>
+        <div class="footer-links">
+            <a href="https://www.reformparty.uk/join">Become a Member</a>
+            <a href="https://www.reformparty.uk/donate-1">Donate</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Load navbar
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+</script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a campaign sign to support Rita Anstey-Lewis in Cambridgeshire. Show your support for Reform UK.">
+    <title>Request a Sign | Rita Anstey-Lewis for Cambridgeshire</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div id="navbar-placeholder"></div>
+</header>
+
+<main>
+    <section class="page-header">
+        <div class="container">
+            <h1>Request a Sign</h1>
+            <p>Show your support for a better Cambridgeshire</p>
+        </div>
+    </section>
+
+    <section class="sign-request-section">
+        <div class="container">
+            <div class="request-grid">
+                <div class="form-container">
+                    <h2>Request Your Sign</h2>
+                    <form id="sign-request-form" class="request-form">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input
+                                    type="text"
+                                    id="fullName"
+                                    name="fullName"
+                                    required
+                                    placeholder="Your full name"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                    placeholder="Your email address"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Your phone number"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Full Address *</label>
+                            <input
+                                    type="text"
+                                    id="addressLine1"
+                                    name="addressLine1"
+                                    required
+                                    placeholder="Address Line 1"
+                            >
+                            <input
+                                    type="text"
+                                    id="addressLine2"
+                                    name="addressLine2"
+                                    placeholder="Address Line 2 (Optional)"
+                            >
+                            <input
+                                    type="text"
+                                    id="city"
+                                    name="city"
+                                    required
+                                    placeholder="City"
+                            >
+                            <input
+                                    type="text"
+                                    id="postcode"
+                                    name="postcode"
+                                    required
+                                    placeholder="Postcode"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signType">Sign Type *</label>
+                            <select id="signType" name="signType" required>
+                                <option value="">Select a sign type</option>
+                                <option value="lawn">Lawn Sign</option>
+                                <option value="window">Window Sign</option>
+                                <option value="both">Both</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quantity">Quantity *</label>
+                            <select id="quantity" name="quantity" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Additional Notes</label>
+                            <textarea
+                                    id="notes"
+                                    name="notes"
+                                    placeholder="Any special instructions or requests"
+                            ></textarea>
+                        </div>
+
+                        <div class="form-group consent-checkbox">
+                            <input
+                                    type="checkbox"
+                                    id="consent"
+                                    name="consent"
+                                    required
+                            >
+                            <label for="consent">
+                                I agree to have a campaign sign placed at my address and understand that it will be collected after the election.
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-check"></i> Request Sign
+                        </button>
+                    </form>
+                </div>
+
+                <div class="info-sidebar">
+                    <div class="info-card">
+                        <h3><i class="fas fa-info-circle"></i> Important Information</h3>
+                        <ul>
+                            <li>Signs are free of charge</li>
+                            <li>Delivery within 3-5 working days</li>
+                            <li>Must be visible from the street</li>
+                            <li>We'll collect after the election</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-question-circle"></i> Questions?</h3>
+                        <p>Contact our team:</p>
+                        <div class="contact-options">
+                            <a href="tel:YOUR_PHONE" class="contact-link">
+                                <i class="fas fa-phone"></i> Call Us
+                            </a>
+                            <a href="mailto:YOUR_EMAIL" class="contact-link">
+                                <i class="fas fa-envelope"></i> Email Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p>Published and promoted by Reform UK, 83 Victoria Street, London SW1H 0HW</p>
+        <div class="footer-links">
+            <a href="https://www.reformparty.uk/join">Become a Member</a>
+            <a href="https://www.reformparty.uk/donate-1">Donate</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Load navbar
+    fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+
+    // Form validation and submission
+    document.getElementById('sign-request-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Add your form submission logic here
+        // You can use AJAX or fetch to send the data to your server
+        alert('Thank you for your request! We will deliver your sign soon.');
+    });
+</script>
+<script src="script.js"></script>
+</body>
+</html>
